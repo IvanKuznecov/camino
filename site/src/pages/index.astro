@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro'
+---
+<Base>
+  <header class="sticky top-0 bg-white/60 backdrop-blur-sm border-b">
+    <div class="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-amber-100 rounded-md flex items-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M4 12c4-6 8-6 12 0" stroke="#7a5a2a" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">Camino</div>
+          <div class="text-xs text-gray-500">Made in Europe — Latvia</div>
+        </div>
+      </div>
+      <nav class="space-x-4 text-gray-600">
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#instructions">Instructions</a>
+        <a href="#buy">Buy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-8">
+    <section class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h1 class="text-3xl font-bold mb-4">Modern folding cajon made for traveling musicians</h1>
+        <p class="text-gray-600 mb-6">High-quality Baltic birch, premium hardware, adjustable snare springs — folds flat for easy transport.</p>
+        <div class="flex gap-3">
+          <a class="px-4 py-2 rounded-md bg-amber-600 text-white" href="#buy">Buy on Vinted</a>
+          <a class="px-4 py-2 rounded-md border" href="#instructions">Assembly & Safety</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/cajon_front.svg" alt="Camino front" />
+      </div>
+    </section>
+
+    <section id="features" class="py-8">
+      <h2 class="text-xl font-semibold text-amber-700 mb-4">Features</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="card">High-quality Baltic birch construction with natural finish</div>
+        <div class="card">High-end hinges and components for long life</div>
+        <div class="card">Adjustable snare springs for tone customization</div>
+        <div class="card">Easy to assemble and fold — designed for travel</div>
+        <div class="card">Compact carry bag included</div>
+      </div>
+    </section>
+
+    <section id="specs" class="py-8 bg-gradient-to-b from-amber-50/30 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-amber-700 mb-4">Specifications</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="card"><strong>Dimensions (assembled)</strong><div>47 × 30 × 29 cm</div></div>
+        <div class="card"><strong>Dimensions (folded)</strong><div>47 × 30 × 7 cm</div></div>
+        <div class="card"><strong>Material</strong><div>Baltic birch</div></div>
+        <div class="card"><strong>Included</strong><div>Carry bag, mounting hardware</div></div>
+      </div>
+    </section>
+
+    <section id="instructions" class="py-8">
+      <h2 class="text-xl font-semibold text-amber-700 mb-4">Assembly & Safety</h2>
+      <ol class="list-decimal list-inside space-y-2 bg-white p-4 rounded-md shadow-sm">
+        <li>Unpack the cajon and lay out all components on a soft surface.</li>
+        <li>Unfold the panels until they click into the primary hinge positions.</li>
+        <li>Install and tighten all supplied fixings and fasteners using the included tools.</li>
+        <li>Adjust snare springs to desired tension for your preferred tone.</li>
+        <li>Place the cajon on a stable, level surface before playing.</li>
+      </ol>
+      <div class="mt-4 p-4 bg-red-50 border-l-4 border-red-400 rounded-md text-red-700">Warning: Do not sit on the cajon unless it is fully assembled and all fixings are securely fastened and tightened.</div>
+    </section>
+
+    <section id="gallery" class="py-8 bg-amber-50/30 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-amber-700 mb-4">Gallery (placeholders)</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="card"><img src="/images/cajon_front.svg" alt="front"/></div>
+        <div class="card"><img src="/images/cajon_folded.svg" alt="folded"/></div>
+        <div class="card"><img src="/images/cajon_detail.svg" alt="detail"/></div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-8">
+      <h2 class="text-xl font-semibold text-amber-700 mb-4">FAQ</h2>
+      <div class="bg-white p-4 rounded-md shadow-sm">
+        <dl>
+          <dt class="font-semibold mt-3">Is the cajon suitable for professional use?</dt>
+          <dd class="text-gray-600">Yes — built from high-quality Baltic birch and premium hardware designed for gigging musicians.</dd>
+          <dt class="font-semibold mt-3">How long does assembly take?</dt>
+          <dd class="text-gray-600">Typical assembly takes 3–7 minutes using the included fastenings and tools.</dd>
+          <dt class="font-semibold mt-3">Can I adjust the snare tension?</dt>
+          <dd class="text-gray-600">Yes — the cajon has adjustable snare springs so you can fine-tune the tone.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="buy" class="py-8 bg-amber-50/30 rounded-xl p-6">
+      <h2 class="text-xl font-semibold text-amber-700 mb-4">Purchase</h2>
+      <p class="mb-4">Interested in buying? Use the Vinted listing. (Link placeholder)</p>
+      <a class="px-4 py-2 rounded-md bg-amber-600 text-white" href="https://www.vinted.com/">Buy on Vinted</a>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-8">Made with care — Baltic birch & premium hardware. Contact: info@example.com</footer>
+</Base>

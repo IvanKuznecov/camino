@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #FBF9F6;
+  --accent: #7a5a2a;
+  --accent-2: #8FAE8C;
+}
+
+body{@apply bg-[var(--bg)] text-gray-800 antialiased}
+
+.card{@apply bg-white rounded-xl shadow-md p-6}

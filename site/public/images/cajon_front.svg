@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="20" fill="#fbf9f6"/>
+  <rect x="140" y="80" width="520" height="440" rx="16" fill="#f6efe6" stroke="#e3d9cf"/>
+  <rect x="200" y="140" width="400" height="320" rx="8" fill="#efe9df" stroke="#e3d9cf"/>
+  <circle cx="400" cy="320" r="48" fill="#fdf7ef" stroke="#d5c6b2"/>
+  <text x="400" y="500" font-family="sans-serif" font-size="24" text-anchor="middle" fill="#7a5a2a">Camino — Front (placeholder)</text>
+</svg>
