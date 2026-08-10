@@ -3,15 +3,15 @@
 /* --- Design System & CSS Variables --- */
 :root {
   /* Colors */
-  --color-bg-primary: #FAF8F5;    /* Warm Soft Cream */
-  --color-bg-secondary: #F1EEE9;  /* Soft Sand-Gray */
-  --color-bg-card: #FFFFFF;       /* Pure White */
-  --color-text-primary: #2D3130;  /* Slate Charcoal */
-  --color-text-secondary: #5E6562;/* Muted Slate Charcoal */
-  --color-accent-amber: #D9863B;  /* Warm Ochre / Baltic Birch wood tone */
-  --color-accent-terracotta: #C2593F; /* Earthy Red accent */
-  --color-accent-sage: #5E7265;   /* Sage green of the path */
-  --color-border: #E5E0D8;
+  --color-bg-primary: #F4F7F5;       /* Pale Sage White */
+  --color-bg-secondary: #E6EDE9;     /* Soft Spruce Mist */
+  --color-bg-card: #FFFFFF;          /* Pure White */
+  --color-text-primary: #1F2824;     /* Deep Forest Charcoal */
+  --color-text-secondary: #4C5C54;   /* Muted Pine Gray */
+  --color-accent-amber: #2E5A44;     /* Spruce Green (Main brand color) */
+  --color-accent-terracotta: #C88265;/* Warm Cedar Accent */
+  --color-accent-sage: #809689;      /* Light Moss Green */
+  --color-border: #D5DFD9;
   --color-warning-bg: #FFF5F2;    /* Soft Red alert background */
   --color-warning-border: #FCDAD2;
   --color-warning-text: #B23B1E;
