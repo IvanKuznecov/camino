@@ -1,7 +1,7 @@
 {
   "name": "camino",
   "branch": "main",
-  "buildCommand": "cd site && npm ci && npm run build",
+  "buildCommand": "npm install --prefix site && npm run build --prefix site",
   "publishDir": "site/dist",
   "nodeVersion": "18",
   "notes": "Connect this repo in Lovable and the platform will run the buildCommand and publish the directory. If repo is private, grant access or add deploy token."
