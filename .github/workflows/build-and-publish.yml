@@ -7,12 +7,18 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Ensure the workflow has permission to push to the repo (required for gh-pages deploy)
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js 18
         uses: actions/setup-node@v4
@@ -30,3 +36,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site/dist
+          publish_branch: gh-pages
+          # ensure committer info so git push works in all environments
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          # allow empty commits so action doesn't fail when nothing changed
+          allow_empty_commit: true
+          # clean published directory before publishing
+          clean: true
