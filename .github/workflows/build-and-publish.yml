@@ -42,5 +42,3 @@ jobs:
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
           # allow empty commits so action doesn't fail when nothing changed
           allow_empty_commit: true
-          # clean published directory before publishing
-          clean: true
